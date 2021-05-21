@@ -1,0 +1,35 @@
+body {
+	position: relative;
+width: auto;
+height: auto;
+
+/* Blue/$dark-blue */
+
+background: #051D3B;
+border-radius: 40px;
+
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+	
+}
+
+.logo {
+	height: 50px;
+	margin-left: 25px;
+	
+	
+}
+
+.busca {
+
+}
+
+.perfil {
+	height: 65px;
+	margin-right: 25px;
+}
