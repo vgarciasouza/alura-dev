@@ -1,12 +1,11 @@
 body {
 	position: relative;
-width: auto;
-height: auto;
+	/* Blue/$dark-blue */
 
-/* Blue/$dark-blue */
-
-background: #051D3B;
-border-radius: 40px;
+	background: #051D3B;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	
 
 }
 
@@ -14,22 +13,36 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 0;
+	
+	position: absolute;
+	width: 90%;
+	height: 56px;
+	left: 32px;
+	top: 32px;	
+
+
 	
 }
 
 .logo {
-	height: 50px;
-	margin-left: 25px;
-	
+
+	height: 34.05px;
 	
 }
 
 .busca {
 
+	height: 56px;
+
+	
+
+	
+
 }
 
 .perfil {
-	height: 65px;
-	margin-right: 25px;
+	/* Auto Layout */
+
+	height: 56px;
+	
 }
