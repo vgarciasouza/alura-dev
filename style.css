@@ -1,48 +1,138 @@
 body {
-	position: relative;
-	/* Blue/$dark-blue */
-
-	background: #051D3B;
-	border-top-left-radius: 40px;
-	border-top-right-radius: 40px;
-	
-
+background: #051D3B;
+border-radius: 40px;
+font-size: 16px;
 }
 
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	
-	position: absolute;
-	width: 90%;
-	height: 56px;
-	left: 32px;
-	top: 32px;	
+.cabecalho {
+	margin: 2rem 2rem 0 2rem;
 
-
-	
 }
 
 .logo {
 
-	height: 34.05px;
-	
-}
+	width: 10%
+	}
 
 .busca {
 
-	height: 56px;
+	height: 3rem;
+	width: 50vw;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.16);
+	border: none;
 
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	
-
-	
-
 }
 
 .perfil {
-	/* Auto Layout */
 
-	height: 56px;
+
+	width: 10%;
+
+	
 	
 }
+
+.menu {
+	/* Menu */
+
+
+
+	position: absolute;
+	width: 189px;
+	height: 146px;
+	left: 32px;
+	top: 128px;
+
+	/* Sidebar title */
+
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	/* identical to box height, or 150% */
+
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+
+	/* Neutral/$white */
+
+	color: #FFFFFF;
+}
+
+.principal {
+	display: flex;
+}
+
+.menu-titulo {
+	/* Sidebar title */
+
+
+	
+
+/*	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.5em;
+	/* identical to box height, or 150% */
+
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+}
+
+.menu-lista {
+
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	transition: 1s all;
+
+/* identical to box height, or 150% */
+
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+}
+
+.menu-lista:hover {
+	color: #888888;
+	text-transform: underline;
+
+	}
+
+.fundo-editor {
+	/*position: absolute;
+	left: 0%;
+	right: 74.6%;
+	top: 0%;
+	bottom: 0%;
+
+}
+
+.logo-editor {
+	position: absolute;
+	left: 8.33%;
+	right: 8.33%;
+	top: 16.67%;
+	bottom: 16.67%;
+
+}*/
+
