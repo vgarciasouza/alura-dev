@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="flexbox.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	</head>
 
 	<body class="corpoPrincipal">
@@ -18,6 +20,48 @@
 			<img src="author.png" class="perfil">
 		</header>
 
+		<main class="principal">
+		
+			<nav class="menu">
+				<h3 class="titulo">Menu</h3>
+				<ul>
+					<div class="menu-editor">
+						<img src="editor.png" class="editor-img">
+						<a href="index.html" class="menu-lista" class="editor-txt">  Editor de código</a><br>
+					</div>
+					<div class="menu-comunidade">	
+						<img src="comunidade.png" class="comunidade-img">
+						<a href="comunidade.html" class="menu-lista" id="comunidade-txt">   Comunidade</a>
+					</div>	
+				</ul>
+			</nav>
+			
+			<div class="campo-codigo">
+				<code class="campo-editavel" contenteditable="true" aria-label="editor"></code>
+				<button type="button" class="botao-highlight">Visualizar com o Highlight</button>
+			</div>
+
+			<div class="informações">
+				
+				<div class="seu-projeto">
+					<h3 class="titulo"> Seu Projeto</h3>
+					<input type="text" placeholder="Nome do seu projeto" class="nome-projeto">
+					<textarea type="text" placeholder="Descrição do seu projeto" class="descricao-projeto"></textarea>
+				</div>
+
+				<div class="personalizacao">
+					<h3 class="titulo"> Personalização</h3>
+					<select class="seletor-linguagem" name="linguagem">
+						<option class="linguagem">JavaScript</option>
+						<option class="linguagem">Python</option>
+						<option class="linguagem">HTML</option>
+						<option class="linguagem">CSS</option>
+					</select>
+					<input class="cores" type="color" id="colorpicker" value="#6BD1FF">
+				</div>
+				<button type="button" class="botao-salvar">Salvar Projeto</button>
+			</div>
+		</main>
 	
 
 	</body>

@@ -4,17 +4,41 @@
 	justify-content: space-between;
 }
 
-.logo {
-	
+.principal {
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+}
+
+.menu-editor {
+	display: flex;
+	align-items: center;
+
+
+}
+
+.menu-comunidade {
+	display: flex;
+	align-items: center;
 	
 }
 
-.busca {
-	
-	
+.campo-codigo {
+	display: flex;
+	flex-direction: column;
 }
 
-.perfil {
+.informações {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 
-	
+.seu-projeto {
+	display: flex;
+	flex-direction: column;
+}
+ .personalizacao {
+ 	display: flex;
+	flex-direction: column;
 }
