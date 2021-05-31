@@ -5,15 +5,16 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Alura Dev</title>
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="flexbox.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="dracula.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="flexbox.css">
 	</head>
 
-	<body class="corpoPrincipal">
+	<body class="corpoPrincipal" spellcheck="false">
 		<header class="cabecalho">
 			<img src="logo.png" class="logo" alt="logo da alura dev">
 			<input type="search" placeholder="o que busca?" class="busca">
@@ -27,7 +28,7 @@
 				<ul>
 					<div class="menu-editor">
 						<img src="editor.png" class="editor-img">
-						<a href="index.html" class="menu-lista" class="editor-txt">  Editor de código</a><br>
+						<a href="index.html" class="menu-lista editor-txt">  Editor de código</a><br>
 					</div>
 					<div class="menu-comunidade">	
 						<img src="comunidade.png" class="comunidade-img">
@@ -37,8 +38,10 @@
 			</nav>
 			
 			<div class="campo-codigo">
-				<code class="campo-editavel" contenteditable="true" aria-label="editor"></code>
-				<button type="button" class="botao-highlight">Visualizar com o Highlight</button>
+				<div class="codigo-wrapper"> 
+					<code class="campo-editavel hljs" contenteditable="true" aria-label="editor" id="code"></code>
+				</div>
+					<button class="botao-highlight">Visualizar com o Highlight</button>
 			</div>
 
 			<div class="informações">
@@ -51,17 +54,20 @@
 
 				<div class="personalizacao">
 					<h3 class="titulo"> Personalização</h3>
-					<select class="seletor-linguagem" name="linguagem">
+					<select class="seletor-linguagem" name="linguagem" data-linguagem>
 						<option class="linguagem">JavaScript</option>
 						<option class="linguagem">Python</option>
 						<option class="linguagem">HTML</option>
 						<option class="linguagem">CSS</option>
 					</select>
-					<input class="cores" type="color" id="colorpicker" value="#6BD1FF">
+					<input class="cores" type="color" id="color" value="#6BD1FF">
 				</div>
-				<button type="button" class="botao-salvar">Salvar Projeto</button>
+				<button class="botao-salvar">Salvar Projeto</button>
 			</div>
 		</main>
 	
-
+		
+		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/highlight.min.js"></script>
+		<script src="index.js"></script>
+		<script src="seletorCor.js"></script>		
 	</body>

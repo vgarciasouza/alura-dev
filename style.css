@@ -64,15 +64,15 @@ font-size: 16px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1rem;
-	line-height: 1.5rem
-	font-style: none;
+	line-height: 1.5rem;
 	text-decoration: none;
+	
 /* identical to box height, or 150% */
 
 
 /* Neutral/$white */
 
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .comunidade-txt {
@@ -97,11 +97,22 @@ opacity: 0.56;
 	margin-bottom: 1rem;
 }
 
+.codigo-wrapper{
+	height: 28vw;
+	width: 50vw;
+	margin-bottom: 4rem;
+}
+
 .campo-editavel {
 	
-	height: 50vh;
+	display: block;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    height: 100%;
 	padding: 3.25rem 1rem 1rem 1rem;
-	background: #141414;
 	border-width: 2rem;
 	border-style: solid;
 	border-color: #6BD1FF;
