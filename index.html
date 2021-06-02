@@ -10,46 +10,59 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="stylesheet" href="dracula.css">
-		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="flexbox.css">
+		<link rel="stylesheet" href="style.css">
+		
 	</head>
 
 	<body class="corpoPrincipal" spellcheck="false">
 		<header class="cabecalho">
-			<img src="logo.png" class="logo" alt="logo da alura dev">
+			<a href="index.html"><img src="logo.png" class="logo" alt="logo da alura dev"></a>
 			<input type="search" placeholder="o que busca?" class="busca">
+			<img src="/img/Vectorlupa.svg" class="busca-mobile">
 			<img src="author.png" class="perfil">
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
 		</header>
 
 		<main class="principal">
 		
 			<nav class="menu">
-				<h3 class="titulo">Menu</h3>
-				<ul>
-					<div class="menu-editor">
-						<img src="editor.png" class="editor-img">
-						<a href="index.html" class="menu-lista editor-txt">  Editor de código</a><br>
-					</div>
-					<div class="menu-comunidade">	
-						<img src="comunidade.png" class="comunidade-img">
-						<a href="comunidade.html" class="menu-lista" id="comunidade-txt">   Comunidade</a>
-					</div>	
+				<h3 class="titulo titulo-mobile" >Menu</h3>
+				<ul class="menu-opcoes">
+					<li>
+						<div class="menu-editor">
+							<img src="img/icon-editor.svg" class="editor-img">
+							<a href="index.html" class="menu-lista editor-txt">  Editor de código</a><br>
+						</div>
+					</li>
+					<li>	
+						<div class="menu-comunidade">	
+							<img src="img/icon-comunidade.svg" class="comunidade-img">
+							<a href="comunidade.html" class="menu-lista" id="comunidade-txt">   Comunidade</a>
+						</div>
+					</li>
+					<hr>
+					<li><img src="author.png" class="perfil-mobile"> </li>
 				</ul>
 			</nav>
 			
-			<div class="campo-codigo">
+			<section class="campo-codigo">
 				<div class="codigo-wrapper"> 
 					<code class="campo-editavel hljs" contenteditable="true" aria-label="editor" id="code"></code>
 				</div>
 					<button class="botao-highlight">Visualizar com o Highlight</button>
-			</div>
+			</section>
 
 			<div class="informações">
 				
 				<div class="seu-projeto">
-					<h3 class="titulo"> Seu Projeto</h3>
+					<h3 class="titulo" data-project-name> Seu Projeto</h3>
 					<input type="text" placeholder="Nome do seu projeto" class="nome-projeto">
-					<textarea type="text" placeholder="Descrição do seu projeto" class="descricao-projeto"></textarea>
+					<textarea type="text" placeholder="Descrição do seu projeto" class="descricao-projeto" data-project-description></textarea>
 				</div>
 
 				<div class="personalizacao">
@@ -60,14 +73,18 @@
 						<option class="linguagem">HTML</option>
 						<option class="linguagem">CSS</option>
 					</select>
-					<input class="cores" type="color" id="color" value="#6BD1FF">
+					<input class="cores" type="color" id="color" value="#6BD1FF" data-color>
 				</div>
 				<button class="botao-salvar">Salvar Projeto</button>
 			</div>
 		</main>
 	
 		
+	
 		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/highlight.min.js"></script>
 		<script src="index.js"></script>
-		<script src="seletorCor.js"></script>		
+		<script src="seletorCor.js"></script>
+		<script src="/componentes/salvaProjeto.js"></script>
+		<script src="/componentes/burguer.js"></script>
+		<script src="/componentes/busca.js"></script>
 	</body>
