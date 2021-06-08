@@ -4,9 +4,9 @@ const botao = document.querySelector('.botao-highlight');
 
 
 function mudaLinguagem() {
-    const codigo = {conteudo: areaDoCodigo.querySelector('code').innerText};
+    let codigo = areaDoCodigo.querySelector('code').innerText
     areaDoCodigo.innerHTML = `<code class="campo-editavel hljs ${linguagem.value}" contenteditable="true" aria-label="editor" id="code"></code>`
-    areaDoCodigo.querySelector('code').innerText = code.conteudo;
+    areaDoCodigo.firstChild.innerText = codigo
 }
 
 linguagem.addEventListener('change', () => {
@@ -14,7 +14,6 @@ linguagem.addEventListener('change', () => {
 })
 
 botao.addEventListener('click', () => {
-    const codigo = areaDoCodigo.querySelector('code')
-    hljs.highlightBlock(codigo)
+    let codigo = areaDoCodigo.querySelector('code');
+    codigo.innerHTML = hljs.highlight(codigo.innerText, {language: linguagem.value}).value;
 })
-
