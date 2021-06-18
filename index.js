@@ -14,6 +14,6 @@ linguagem.addEventListener('change', () => {
 })
 
 botao.addEventListener('click', () => {
-    let codigo = areaDoCodigo.querySelector('code');
+    const codigo = areaDoCodigo.querySelector('code');
     codigo.innerHTML = hljs.highlight(codigo.innerText, {language: linguagem.value}).value;
 })

@@ -60,22 +60,21 @@
 			<div class="informações">
 				
 				<div class="seu-projeto">
-					<h3 class="titulo" data-project-name> Seu Projeto</h3>
-					<input type="text" placeholder="Nome do seu projeto" class="nome-projeto">
+					<h3 class="titulo"> Seu Projeto</h3>
+					<input type="text" placeholder="Nome do seu projeto" class="nome-projeto" data-project-name>
 					<textarea type="text" placeholder="Descrição do seu projeto" class="descricao-projeto" data-project-description></textarea>
 				</div>
 
 				<div class="personalizacao">
 					<h3 class="titulo"> Personalização</h3>
 					<select class="seletor-linguagem" name="linguagem" data-linguagem>
-						<option class="linguagem">JavaScript</option>
 						<option class="linguagem">Python</option>
-						<option class="linguagem">HTML</option>
-						<option class="linguagem">CSS</option>
+						<option class="linguagem">Java</option>
+						<option class="linguagem">C</option>
 					</select>
 					<input class="cores" type="color" id="color" value="#6BD1FF" data-color>
 				</div>
-				<button class="botao-salvar">Salvar Projeto</button>
+				<button class="botao-salvar" data-salvar>Salvar Projeto</button>
 			</div>
 		</main>
 	
@@ -84,7 +83,7 @@
 		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/highlight.min.js"></script>
 		<script src="index.js"></script>
 		<script src="seletorCor.js"></script>
-		<script src="/componentes/salvaProjeto.js"></script>
+		<script type="module"  src="/componentes/salvaProjeto.js"></script>
 		<script src="/componentes/burguer.js"></script>
 		<script src="/componentes/busca.js"></script>
 	</body>
